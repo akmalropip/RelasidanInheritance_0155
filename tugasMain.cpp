@@ -6,15 +6,15 @@ using namespace std;
 #include "member.h"
 #include "admin.h"
 
-// Inisialisasi nilai variabel static diletakkan di luar class (di dalam file main)
+// Inisialisasi nilai variabel static diletakkan di luar class (di dalam file tugasMain)
 int user::globalId = 0; 
 
 int main() {
-    admin* varAdmin = new admin("Budi (Admin)", "budi@admin.com");
+    admin* varAdmin = new admin("Rafif (Admin)", "rafif@admin.com");
     cout << "\n";
 
-    member* varMember1 = new member("Tono", "tono@mail.com", "Aktif");
-    member* varMember2 = new member("Rini", "rini@mail.com", "Nonaktif");
+    member* varMember1 = new member("Tabur", "tabur@mail.com", "Aktif");
+    member* varMember2 = new member("Jera", "jera@mail.com", "Nonaktif");
     cout << "\n";
 
     varAdmin->tambahMember(varMember1);
